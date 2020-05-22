@@ -5,7 +5,6 @@
 #
 # cluster/CVM IP
 # username
-# the name of the VM to be created
 # the password for Prism Element
 # the container where the image will be created (tipically Images) Case Sensitive
 # the image name
@@ -25,7 +24,6 @@ if [ "$JQ" = "" ] || [ "$CURL" = "" ]; then
 else
     CLUSTER_IP=`echo -n $JSON_CONTENTS | jq -r ".cluster_ip"`
     USERNAME=`echo -n $JSON_CONTENTS | jq -r ".username"`
-    VM_NAME=`echo -n $JSON_CONTENTS | jq -r ".vm_name"`
     PASSWORD=`echo -n $JSON_CONTENTS | jq -r ".passwd"`
     CONTAINER=`echo -n $JSON_CONTENTS | jq -r ".container"`
     IMAGE_NAME=`echo -n $JSON_CONTENTS | jq -r ".image_name"`
