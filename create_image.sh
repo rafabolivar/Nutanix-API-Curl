@@ -10,8 +10,7 @@
 # the image name
 #
 # this file must be named "create_image.json" and be formatted as follows:
-#
-# {"cluster_ip":"10.0.0.1","username":"admin","vm_name":"BasicVMViaAPIv3"}
+# {"cluster_ip":"10.55.67.37","username":"admin","passwd":"nx2Tech123!","container":"Images","image_name":"fedora-coreos"}
 
 JSON_FILE="./create_image.json"
 JSON_CONTENTS="`cat ${JSON_FILE}`"
