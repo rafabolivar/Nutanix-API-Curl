@@ -65,7 +65,7 @@ echo "Image uuid: $IMAGE_UUID"
 
 
     # submit the request
-  curl --insecure --basic -k -T "/root/fcos/fedora-coreos-31.20200505.3.0-qemu.x86_64.qcow2" -X PUT \
+  curl --insecure --basic -k -T "/home/centos/fcos/fedora-coreos.qcow2" -X PUT \
        -H "Content-Type: application/json" \
        -H "Accept: application/json" \
        -H "Authorization: Basic $AUTH_HEADER" \
